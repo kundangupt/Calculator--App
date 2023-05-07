@@ -14,19 +14,20 @@ function  Calculator (){
 
 });
 
-     Equal.addEventListener("click", function(e){
-         if(screen.value === ""){
-            screen.value = ""
+     Equal.addEventListener('click', function(e){
+         if(Screen.value === ''){
+            Screen.value = " ";
          } 
-         else{
-               let answer = eval(screen.value);
-               screen.value = answer;
+         else {
+               let answer = eval(Screen.value);
+               Screen.value = answer;
          }
      });
 
-     Clear.addEventListener("click", function(e){
-           screen.value ="";
-     })
+     Clear.addEventListener('click', function(){
+             Screen.value =  null;
+           
+     });
 
 }
 Calculator();
