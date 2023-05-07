@@ -33,7 +33,7 @@ form input{
     color:rgb(13, 14, 14);
     background-color: antiquewhite;
     text-align: right;
-    pointer-events:none; 
+    /* pointer-events:none;  */
 }
 button {
     flex : 0 0 22%;

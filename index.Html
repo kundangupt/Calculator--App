@@ -6,14 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="Stylesheet"  href="Styles.css">
+    <link rel="Stylesheet" href="Styles.css">
   
 </head>
 
 <body>
     <section class ="Calculator">
         <form>
-            <input type="text" class="screen"/>
+            <input type="text" class="screen" disabled/>
         </form>
     
      <div class="buttons">
@@ -25,7 +25,7 @@
        
         
         
-        <button type="button" class = "btn  btn-grey"  data-num="9">9</button>
+        <button type="button" class = "btn  btn-grey"value="9" onclick="clk(this.value)"onclick="clk" data-num="9">9</button>
         <button type="button" class = "btn  btn-grey"  data-num ="8">8</button>
         <button type="button" class = "btn  btn-grey"  data-num="7">7</button>
         <button type="button" class = "btn  btn-grey"  data-num ="6">6</button>
@@ -46,7 +46,7 @@
     </section>
        
        
-    <script src="Calculator.js"></script>
+    <script type="text/javascript"  src="Calculator.js"></script>
     </body>
 
 </html>
