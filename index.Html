@@ -6,46 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="Stylesheet"  href="Styles.css">
-  
+    <link rel="Stylesheet" href="Styles.css">
+    <script src="calculator.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.js"
+        integrity="sha512-BbVEDjbqdN3Eow8+empLMrJlxXRj5nEitiCAK5A1pUr66+jLVejo3PmjIaucRnjlB0P9R3rBUs3g5jXc8ti+fQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.6.4/math.min.js"
+        integrity="sha512-iphNRh6dPbeuPGIrQbCdbBF/qcqadKWLa35YPVfMZMHBSI6PLJh1om2xCTWhpVpmUyb4IvVS9iYnnYMkleVXLA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
-    <section class ="Calculator">
+    <section class="Calculator">
         <form>
-            <input type="text"  class="screen" />
+            <input type="text" class="screen" id="result" />
         </form>
-    
-     <div class="buttons">
-        
-        <button type="button" class = "btn  btn-yellow" data-num="\">\</button>
-        <button type="button" class = "btn  btn-yellow" data-num ="+">+</button>
-        <button type="button" class = "btn  btn-yellow" data-num="-">-</button>
-        <button type="button" class = "btn  btn-yellow" data-num ="*">*</button>
-       
-        
-        
-        <button type="button" class = "btn  btn-grey"  data-num="9">9</button>
-        <button type="button" class = "btn  btn-grey"  data-num ="8">8</button>
-        <button type="button" class = "btn  btn-grey"  data-num="7">7</button>
-        <button type="button" class = "btn  btn-grey"  data-num ="6">6</button>
-        <button type="button" class = "btn  btn-grey"  data-num="5">5</button>
-        <button type="button" class = "btn  btn-grey"  data-num ="4">4</button>
-        <button type="button" class = "btn  btn-grey"  data-num="3">3</button>
-        <button type="button" class = "btn  btn-grey"  data-num ="2">2</button>
-        <button type="button" class = "btn  btn-grey"  data-num="1">1</button>
-        <button type="button" class = "btn  btn-grey"  data-num ="0">0</button>
-        <button type="button" class = "btn  btn-grey"  data-num=".">.</button>
-        
-        
-        <button type="button" class = "btn  btn-equal">=</button>
-        <button type="button" class = "btn  btn-clear">C</button>
-        
 
-    </div>
+        <div class="buttons">
+
+            <button type="button" class="btn  btn-yellow" data-num="\">\</button>
+            <button type="button" class="btn  btn-yellow" data-num="+">+</button>
+            <button type="button" class="btn  btn-yellow" data-num="-">-</button>
+            <button type="button" class="btn  btn-yellow" data-num="*">*</button>
+
+
+
+            <button type="button" class="btn  btn-grey" data-num="9">9</button>
+            <button type="button" class="btn  btn-grey" data-num="8">8</button>
+            <button type="button" class="btn  btn-grey" data-num="7">7</button>
+            <button type="button" class="btn  btn-grey" data-num="6">6</button>
+            <button type="button" class="btn  btn-grey" data-num="5">5</button>
+            <button type="button" class="btn  btn-grey" data-num="4">4</button>
+            <button type="button" class="btn  btn-grey" data-num="3">3</button>
+            <button type="button" class="btn  btn-grey" data-num="2">2</button>
+            <button type="button" class="btn  btn-grey" data-num="1">1</button>
+            <button type="button" class="btn  btn-grey" data-num="0">0</button>
+            <button type="button" class="btn  btn-grey" data-num=".">.</button>
+
+
+            <button type="button" class="btn-equal" value="=" onclick="solve()">=</button>
+            <button type="button" class="btn  btn-clear">C</button>
+
+
+        </div>
     </section>
-       
-    <script    src="calculator.js" ></script>
-    </body>
+
+
+
+
+
+</body>
 
 </html>
